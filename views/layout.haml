@@ -6,4 +6,16 @@
     %title Exhibit
   %body
     #wrap
+      #nav
+        %ul
+          %a(href='/')
+            %li home
+          %a(href='/images')
+            %li images
+          %a(href='/')
+            %li home
+          %a(href='/')
+            %li home
+
+      %p The current user is #{@user}
       = yield

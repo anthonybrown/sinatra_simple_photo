@@ -8,6 +8,20 @@ IMAGES = [
 
 class App < Sinatra::Base
   
+
+  before /images/ do
+    @message = "You are viewing an image"
+  end
+  
+  before do
+    @user = "Tony Brown"
+    puts "==> Entering Request"
+  end
+  
+  after do
+    puts " <== Leaveing Request"
+  end
+  
   get '/images' do
     @images = IMAGES
     erb :images
@@ -21,7 +35,7 @@ class App < Sinatra::Base
   end
 
   get '/' do
-    "Hello World"
+    erb :hello, layout: true
   end
   
   post '/' do
@@ -35,8 +49,9 @@ class App < Sinatra::Base
   delete '/' do
     "Goodbye World via DELETE"
   end
-
-  get '/hello/?:first_name?/?:last_name?' do |first, last|
-    "hello #{first} #{last}"
+  
+  #pay attention to this
+  get '/hello/?:first_name?/?:last_name?/?:what?' do |first, last, what|
+    "hello #{first} #{last} #{what}"
   end
 end

@@ -6,8 +6,24 @@
   <link rel="stylesheet" href="../css/style.css"/>
 </head>
 <body>
-  <div id='wrap'>
+<div id='wrap'>
+    <nav>
+      <ul>
+        <li><a href="/">home</a></li>
+        <li><a href="/images">images</a></li>
+        <li><a href="/">home</a></li>
+        <li><a href="/">home</a></li>
+      </ul>
+    </nav>
     <h1>Using the ERB layout file.</h1>
+    <p>The current user is <%= @user %></p>
+
+     <% if @message %>
+    <p>You have a message: </p>
+        <blockquote>
+         <%= @message %>
+       </blockquote>
+     <% end %>
     <%= yield %> 
   </div>
 </body>

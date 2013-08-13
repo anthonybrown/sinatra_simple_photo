@@ -1,3 +1,14 @@
+::-moz-selection {
+  background-color: olive;
+  color: white;
+  text-shadow: none;
+}
+::selection {
+  background-color: olive;
+  color: white;
+  text-shadow: none;
+}
+
 body {
   font-size: 1em;
   color: #444;
@@ -7,3 +18,45 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+
+blockquote {
+  color: rgb(175, 6, 6);
+  font-style: italic;
+}
+
+nav, #nav {
+  width: 55%;
+  float: right;
+  clear: both;
+}
+  nav li, #nav li {
+    float: left;
+    padding: 0;
+    margin: 0 0 0 1.5em;
+    list-style: none;
+  }
+    nav a, #nav a {
+      text-decoration: none;
+      color: #777;
+    }
+      nav a:hover, #nav a:hover {
+        color: firebrick;
+      } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
