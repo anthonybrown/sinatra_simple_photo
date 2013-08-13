@@ -1,0 +1,9 @@
+body {
+  font-size: 1em;
+  color: #444;
+}
+
+#wrap {
+  width: 80%;
+  margin: 0 auto;
+}
