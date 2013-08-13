@@ -1,9 +1,16 @@
 require "sinatra/base"
 
 IMAGES = [
-  { title: "Utopia"     , url: "http://www.beautifullife.info/wp-content/uploads/2013/01/23/08.jpg" },
-  { title: "Alaska"     , url: "http://www.davidsfotos.com/LANDSCAPESpage_files/LANDSCAPES2.jpg" },
-  { title: "The Unknown", url: "http://www.beautifullife.info/wp-content/uploads/2013/01/23/02.jpg" }
+  { title: "Kate"     ,   url: "http://mankindunplugged.com/wp-content/uploads/2013/08/kate-upton-elle-magazine-3.jpg" },
+  { title: "Kate",        url: "http://mankindunplugged.com/wp-content/uploads/2013/08/kate-upton-elle-magazine-2.jpg" },
+  { title: "Hotness",     url: "http://mankindunplugged.com/wp-content/uploads/2013/08/sexy-photo-infinity-pool-action.jpg" },
+  { title: "Irena",       url: "http://mankindunplugged.com/wp-content/uploads/2013/08/Irina-Shayk-GQ-Russia-10.jpg" },
+  { title: "Blonde",      url: "http://i.imgur.com/oU2EFrb.png" },
+  { title: "Alabama",     url: "http://i.imgur.com/QRuVCWK.png" },
+  { title: "Cowgirl",     url: "http://i.imgur.com/fGJClQ8.png" },
+  { title: "The Unknown", url: "http://24.media.tumblr.com/4fe1022e30778b6ce7d92ff1213e0ad4/tumblr_mponkeQPiL1r1of71o1_1280.png" },
+  { title: "Kitten",      url: "http://i.imgur.com/ksUeQGn.jpg" }
+
 ]
 
 class App < Sinatra::Base
