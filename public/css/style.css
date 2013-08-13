@@ -1,10 +1,10 @@
 ::-moz-selection {
-  background-color: olive;
+  background-color: #0062ff;
   color: white;
   text-shadow: none;
 }
 ::selection {
-  background-color: olive;
+  background-color: #0062ff;
   color: white;
   text-shadow: none;
 }
@@ -43,7 +43,8 @@ nav, #nav {
         color: firebrick;
       } 
 
-
+      /*ul { list-style: none; }
+a { text-decoration:none; color: #F87 }*/
 
 
 
